@@ -145,7 +145,7 @@ body {
 }
 @media (max-width:991px) {
     .testmonials .container .card {
-        width: 300px;
+        width: 350px;
         margin: 10px auto !important;
     }
     .testmonials .container {
