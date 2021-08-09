@@ -1,0 +1,161 @@
+/* Start Variables */
+:root {
+    --moderate-violet: hsl(263, 55%, 52%);
+    --vd-grayish-blue: hsl(217, 19%, 35%);
+    --vd-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: #ddd;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+/* Start Testmonials */
+.testmonials {
+    padding: 60px 0;
+}
+.testmonials .container {
+    display: flex;
+    justify-content: space-evenly;
+}
+.testmonials .container .col-l {
+    flex-basis: 68%;
+}
+.testmonials .container .col-r {
+    flex-basis: 20%;
+}
+.testmonials .container .col-l > div {
+    display: flex;
+    justify-content: space-between;
+}
+.testmonials .container .card {
+    padding: 25px 15px;
+    border-radius: 15px;
+}
+.testmonials .container .card .info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.testmonials .container .card .info .name p {
+    margin: 5px 0;
+}
+.testmonials .container .card .info .name .name {
+    color: white;
+    font-weight: bold;
+}
+.testmonials .container .card .info .name .job {
+    color: rgb(207, 204, 204);
+}
+.testmonials .container .card .info .image {
+    width: fit-content;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.testmonials .container .card .image img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.testmonials .container .card .message {
+    margin: 20px 0;
+}
+.testmonials .container .card .message p {
+    font-size: 20px;
+    color: var(--white);
+}
+.testmonials .container .col-l .row-d .jeanette .info .name .name, 
+.testmonials .container .col-r .kira .info .name .name {
+    color: var(--vd-grayish-blue);
+}
+.testmonials .container .col-l .row-d .jeanette .message p, 
+.testmonials .container .col-r .kira .message p {
+    color: var(--vd-grayish-blue);
+}
+.testmonials .container .card .story p {
+    color: #b3adad;
+}
+.testmonials .container .col-l .row-u {
+    margin-bottom: 25px;
+}
+.testmonials .container .col-l .row-u .daniel {
+    flex-basis: 65%;
+    background-color: var(--moderate-violet);
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+.testmonials .container .col-l .row-u .jonathan {
+    flex-basis: 32%;
+    background-color: var(--vd-grayish-blue);
+}
+.testmonials .container .col-l .row-d .jeanette {
+    flex-basis: 32%;
+    background-color: var(--white);
+}
+.testmonials .container .col-l .row-d .patrik {
+    flex-basis: 65%;
+    background-color: var(--vd-blackish-blue);
+}
+.testmonials .container .col-r .kira {
+    background-color: var(--white);
+    height: 100%;
+}
+@media (max-width:991px) {
+    .testmonials .container .card {
+        width: 300px;
+        margin: 10px auto !important;
+    }
+    .testmonials .container {
+        flex-direction: column;
+    }
+    .testmonials .container .col-l > div {
+        flex-direction: column;
+    }
+    .testmonials .container .col-l .row-u {
+        margin-bottom: 0;
+    }
+}
+/* End Testmonials */
